@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    height: 30vh;
+    width: 310px;
+    margin-left: 40%;
+    background: linear-gradient(135deg, aqua, yellow, green, red, pink);
+    border-radius: 20px;
+    animation: waves 3s linear infinite;
+    box-shadow: 0px 0px 40px 20px #0ff;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 450%;
+    width: 91%;
+    border-radius: 11px;
+    background-color: black;
+    height: 81%;
+    margin-top: 11px;
+
+}
+
+#time {
+    color: white;
+    background: linear-gradient(135deg, aqua, yellow, green, red, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes waves {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 3vw;
+}
+h1 code{
+    color: white;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@media screen and (max-width: 400px){
+    footer{
+        font-size: 10vw;
+    }
+    h1 code{
+        padding-top: 5%;
+        font-size: 13vw;
+    }
+}
+    @media screen and (max-width:1000px) {
+        .container {
+            margin: auto;
+            margin-top: 35%;
+        }
+    }
